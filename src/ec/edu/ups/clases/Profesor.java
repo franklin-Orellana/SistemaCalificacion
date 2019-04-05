@@ -6,6 +6,23 @@ public class Profesor extends Persona { // Extend hereda de la clase Persona a P
     private double salario;
     private String cargo;
 
+    public Profesor(){ 
+    }
+    public Profesor(int codigo){
+        super(codigo);
+    }
+
+    public Profesor(int codigo, String nombre, String cedula) {
+        super(codigo, nombre, cedula);
+    }
+
+    public Profesor(String titulo, double salario, String cargo, int codigo, String nombre, String cedula, String telefono, String direccion, String correo, Sede sede) {
+        super(codigo, nombre, cedula, telefono, direccion, correo, sede);
+        this.titulo = titulo;
+        this.salario = salario;
+        this.cargo = cargo;
+    }
+    
     @Override
     public String toString() {
         return "Profesor{" + "titulo=" + titulo + ", salario=" + salario + ", cargo=" + cargo + '}';

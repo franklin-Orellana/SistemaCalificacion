@@ -11,6 +11,14 @@ public class Prueba {
 
     public static void main(String[] args) {
         Estudiante estudiante = new Estudiante();
+        estudiante.setCodigo(1);
+        estudiante.setNombre("Franklin Orellana");
+        estudiante.setCedula("0105599914");
+        estudiante.setDireccion("Antonio Vallejo y Eugenio Espejo");
+        estudiante.setTelefono("2838601");
+        
+        
+        
         
         Profesor profesor = new Profesor();
         
