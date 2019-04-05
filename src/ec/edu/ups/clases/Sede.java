@@ -1,5 +1,6 @@
 package ec.edu.ups.clases;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Sede {
@@ -9,6 +10,10 @@ public class Sede {
     private String direccion;
     private String telefono;
     private List<Carrera> carreras;
+
+    public Sede() {
+        carreras = new ArrayList<>();
+    }
 
     @Override
     public String toString() {
@@ -53,5 +58,10 @@ public class Sede {
 
     public void setCarreras(List<Carrera> carreras) {
         this.carreras = carreras;
+    }
+
+    public void agregarCarrera(Carrera carreras1) {
+        this.carreras.add(carreras1);
+
     }
 }

@@ -70,5 +70,5 @@ public class Persona {
     public void setSede(Sede sede) {
         this.sede = sede;
     }
-
+    
 }

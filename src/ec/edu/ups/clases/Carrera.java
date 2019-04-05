@@ -1,5 +1,6 @@
 package ec.edu.ups.clases;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Carrera {
@@ -11,6 +12,9 @@ public class Carrera {
     private int numeroEstudiantes;
     private String titulo;
 
+    public Carrera(){
+    materias = new ArrayList<>();    
+    }
     @Override
     public String toString() {
         return "Carrera{" + "codigo=" + codigo + ", nombre=" + nombre + ", materias=" + materias + ", numeroSemestres=" + numeroSemestres + ", numeroEstudiantes=" + numeroEstudiantes + ", titulo=" + titulo + '}';
@@ -63,5 +67,7 @@ public class Carrera {
     public void setTitulo(String titulo) {
         this.titulo = titulo;
     }
-
+    public void agregarMateria(Materia materia1){
+        this.materias.add(materia1);        
+    }
 }
