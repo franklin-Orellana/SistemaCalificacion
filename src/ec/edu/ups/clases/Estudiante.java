@@ -1,7 +1,6 @@
 package ec.edu.ups.clases;
 
-public class Estudiante {
-
+public class Estudiante extends Persona {//extends herada de la clase persona a Estudiante
     private Carrera carrera;
 
     @Override

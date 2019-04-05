@@ -1,6 +1,6 @@
 package ec.edu.ups.clases;
 
-public class Profesor {
+public class Profesor extends Persona { // Extend hereda de la clase Persona a Profesor
 
     private String titulo;
     private double salario;
