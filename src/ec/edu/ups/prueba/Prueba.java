@@ -60,10 +60,16 @@ public class Prueba {
         Estudiante alexander = new Estudiante(4, "Alexander Quezada", "0103658935", "098763542", "Las Orquideas", "alexander@est.ups.edu.ec");
         System.out.println(alexander.toString());
         
+        
         Grupo grupo1 = new Grupo(1, "", 20);
         System.out.println(grupo1.toString());
         Grupo grupo2 = new Grupo(2, "", 15);
         System.out.println(grupo2.toString());
+        
+        matematicas.agregarGrupo(grupo1);
+        programacion.agregarGrupo(grupo1);
+        calculo.agregarGrupo(grupo1);
+        
         
         //agregar a la sede carreras
         //agregar a carrera materias

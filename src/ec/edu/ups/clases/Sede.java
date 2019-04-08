@@ -17,11 +17,13 @@ public class Sede {
         this.nombre = nombre;
         this.direccion = direccion;
         this.telefono = telefono;
-    }
-
-    public Sede() {
         carreras = new ArrayList<>();
         materias = new ArrayList<>();
+    }
+    
+
+    public Sede() {
+       
     }
 
     @Override

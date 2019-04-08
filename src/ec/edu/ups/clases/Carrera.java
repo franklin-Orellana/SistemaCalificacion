@@ -13,7 +13,7 @@ public class Carrera {
     private String titulo;
 
     public Carrera(){
-    materias = new ArrayList<>();    
+        
     }
 
     public Carrera(int codigo, String nombre, int numeroSemestres, int numeroEstudiantes, String titulo) {
@@ -22,6 +22,7 @@ public class Carrera {
         this.numeroSemestres = numeroSemestres;
         this.numeroEstudiantes = numeroEstudiantes;
         this.titulo = titulo;
+        materias = new ArrayList<>();
     }
     
     

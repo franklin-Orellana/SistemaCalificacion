@@ -13,7 +13,7 @@ public class Materia {
     private List<Grupo> grupo;
 
     public Materia() {
-        grupo = new ArrayList<>();
+       
     }
 
     public List<Grupo> getGrupo() {
@@ -31,6 +31,7 @@ public class Materia {
         this.numeroCreditos = numeroCreditos;
         this.numeroHoras = numeroHoras;
         this.nivel = nivel;
+        grupo = new ArrayList<>();
     }
 
     @Override
