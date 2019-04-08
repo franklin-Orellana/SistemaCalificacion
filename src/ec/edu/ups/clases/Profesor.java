@@ -25,7 +25,7 @@ public class Profesor extends Persona { // Extend hereda de la clase Persona a P
     
     @Override
     public String toString() {
-        return "Profesor{" + "titulo=" + titulo + ", salario=" + salario + ", cargo=" + cargo + '}';
+        return "Profesor{" + "\ntitulo:" + titulo + "\nsalario:" + salario + "\ncargo:" + cargo + '}';
     }
 
     public String getTitulo() {
