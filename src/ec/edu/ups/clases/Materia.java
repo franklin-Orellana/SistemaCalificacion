@@ -11,7 +11,16 @@ public class Materia {
     private int numeroHoras;
     private int nivel;
     private List<Grupo> grupo;
+    private List<Profesor> profesor;
 
+    public List<Profesor> getProfesor() {
+        return profesor;
+    }
+
+    public void setProfesor(List<Profesor> profesor) {
+        this.profesor = profesor;
+    }
+    
     public Materia() {
        
     }
@@ -23,7 +32,7 @@ public class Materia {
     public void setGrupo(List<Grupo> grupo) {
         this.grupo = grupo;
     }
-    private Profesor profesor;
+
 
     public Materia(int codigo, String nombre, int numeroCreditos, int numeroHoras, int nivel) {//constructor
         this.codigo = codigo;
@@ -32,6 +41,7 @@ public class Materia {
         this.numeroHoras = numeroHoras;
         this.nivel = nivel;
         grupo = new ArrayList<>();
+        profesor = new ArrayList<>();
     }
 
     @Override
@@ -79,16 +89,13 @@ public class Materia {
         this.nivel = nivel;
     }
 
-    public Profesor getProfesor() {
-        return profesor;
-    }
-
-    public void setProfesor(Profesor profesor) {
-        this.profesor = profesor;
-    }
-
+    
     public void agregarGrupo(Grupo grupo1) {
         this.grupo.add(grupo1);
 
     }
+    public void agregarProfesor(Profesor profe){
+        profesor.add(profe);
+    }
+            
 }

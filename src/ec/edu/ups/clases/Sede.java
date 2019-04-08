@@ -10,27 +10,26 @@ public class Sede {
     private String direccion;
     private String telefono;
     private List<Carrera> carreras;
-    private List<Materia> materias;
-
+    
     public Sede(int codigo, String nombre, String direccion, String telefono) {
         this.codigo = codigo;
         this.nombre = nombre;
         this.direccion = direccion;
         this.telefono = telefono;
         carreras = new ArrayList<>();
-        materias = new ArrayList<>();
-    }
+            }
     
-
     public Sede() {
        
     }
 
     @Override
     public String toString() {
-        return "Sede: " + "codigo: " + codigo + "\nnombre=" + nombre + "\ndireccion: " + direccion + "\ntelefono: " + telefono +'"';
+        return "Sede{" + "codigo=" + codigo + ", nombre=" + nombre + ", direccion=" + direccion + ", telefono=" + telefono + ", carreras=" + carreras + '}';
     }
 
+    
+   
     public int getCodigo() {
         return codigo;
     }
