@@ -13,9 +13,9 @@ public class Estudiante extends Persona {//extends herada de la clase persona a 
          super(codigo, nombre, cedula);//instanciar al padre con los datos de entrada 
         }
 
-    public Estudiante(Carrera carrera, int codigo, String nombre, String cedula, String telefono, String direccion, String correo, Sede sede) {
-        super(codigo, nombre, cedula, telefono, direccion, correo, sede);
-        this.carrera = carrera;
+    public Estudiante(int codigo, String nombre, String cedula, String telefono, String direccion, String correo) {
+        super(codigo, nombre, cedula, telefono, direccion, correo);
+
     }
 
     public Estudiante(Carrera carrera) {

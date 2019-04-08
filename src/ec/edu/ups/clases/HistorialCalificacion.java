@@ -1,7 +1,8 @@
 package ec.edu.ups.clases;
 
 public class HistorialCalificacion {
-
+    //clase historialestudiante estudiante 
+    //crear una lista para cada estudiante de tipo historial calificacion agragamos calificacion de cada materia 
     private Materia materia;
     private Estudiante estudiante;
     private int aprovechamiento1;

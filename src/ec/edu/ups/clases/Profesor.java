@@ -16,8 +16,8 @@ public class Profesor extends Persona { // Extend hereda de la clase Persona a P
         super(codigo, nombre, cedula);
     }
 
-    public Profesor(String titulo, double salario, String cargo, int codigo, String nombre, String cedula, String telefono, String direccion, String correo, Sede sede) {
-        super(codigo, nombre, cedula, telefono, direccion, correo, sede);
+    public Profesor(String titulo, double salario, String cargo, int codigo, String nombre, String cedula, String telefono, String direccion, String correo) {
+        super(codigo, nombre, cedula, telefono, direccion, correo);
         this.titulo = titulo;
         this.salario = salario;
         this.cargo = cargo;
@@ -39,6 +39,15 @@ public class Profesor extends Persona { // Extend hereda de la clase Persona a P
     public double getSalario() {
         return salario;
     }
+     
+    public double gettSalario(int horasTrabajadas, double valorporHora){//sobrecarga de datos
+        return salario + (horasTrabajadas * valorporHora);   
+    }
+    
+    public double gettSalario(int comision){//sobregarga de datos
+        return salario + comision;//retorna
+    }
+    
 
     public void setSalario(double salario) {
         this.salario = salario;
