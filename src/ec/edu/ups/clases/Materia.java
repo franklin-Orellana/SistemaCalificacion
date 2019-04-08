@@ -36,7 +36,7 @@ public class Materia {
 
     @Override
     public String toString() {
-        return "Materia{" + "codigo=" + codigo + ", nombre=" + nombre + ", numeroCreditos=" + numeroCreditos + ", numeroHoras=" + numeroHoras + ", nivel=" + nivel + ", grupo=" + grupo + ", profesor=" + profesor + '}';
+        return "Materia{" + "\ncodigo:" + codigo + "\nnombre:" + nombre + "\nnumeroCreditos:" + numeroCreditos + "\nnumeroHoras:" + numeroHoras + "\nnivel:" + nivel + "\ngrupo:" + grupo + "\nprofesor:" + profesor + '}';
     }
 
     public int getCodigo() {

@@ -15,7 +15,7 @@ public class Grupo {
     
     @Override
     public String toString() {
-        return "Grupo{" + "codigo=" + codigo + ", nombre=" + nombre + ", cupo=" + cupo + '}';
+        return "Grupo{" + "codigo:" + codigo + "\nnombre:" + nombre + "\ncupo:" + cupo + '}';
     }
 
     public int getCodigo() {

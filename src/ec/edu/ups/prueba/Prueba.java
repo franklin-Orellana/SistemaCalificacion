@@ -69,7 +69,9 @@ public class Prueba {
         matematicas.agregarGrupo(grupo1);
         programacion.agregarGrupo(grupo1);
         calculo.agregarGrupo(grupo1);
-        
+        etica.agregarGrupo(grupo2);
+        algebra.agregarGrupo(grupo2);
+        ecuaciones.agregarGrupo(grupo2);
         
         //agregar a la sede carreras
         //agregar a carrera materias

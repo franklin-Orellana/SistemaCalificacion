@@ -46,7 +46,7 @@ public class Estudiante extends Persona {//extends herada de la clase persona a 
   
     @Override
     public String toString() {
-        return "Estudiante{" + "carrera=" + carrera + '}';
+        return "Estudiante{" + "carrera:" + carrera + '}';
     }
 
     public void agregarCarrera(Carrera carr){
