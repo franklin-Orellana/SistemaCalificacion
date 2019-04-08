@@ -10,6 +10,7 @@ public class Sede {
     private String direccion;
     private String telefono;
     private List<Carrera> carreras;
+    private List<Materia> materias;
 
     public Sede(int codigo, String nombre, String direccion, String telefono) {
         this.codigo = codigo;
@@ -20,11 +21,12 @@ public class Sede {
 
     public Sede() {
         carreras = new ArrayList<>();
+        materias = new ArrayList<>();
     }
 
     @Override
     public String toString() {
-        return "Sede{" + "codigo=" + codigo + ", nombre=" + nombre + ", direccion=" + direccion + ", telefono=" + telefono + ", carreras=" + carreras + '}';
+        return "Sede: " + "codigo: " + codigo + "\nnombre=" + nombre + "\ndireccion: " + direccion + "\ntelefono: " + telefono +'"';
     }
 
     public int getCodigo() {
@@ -67,8 +69,9 @@ public class Sede {
         this.carreras = carreras;
     }
 
-    public void agregarCarrera(Carrera carreras1) {
-        this.carreras.add(carreras1);
+    public void agregarCarrera(Carrera carr) {
+        carreras.add(carr);
 
     }
+            
 }

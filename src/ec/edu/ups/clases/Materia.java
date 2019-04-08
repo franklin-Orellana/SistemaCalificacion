@@ -1,5 +1,8 @@
 package ec.edu.ups.clases;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Materia {
 
     private int codigo;
@@ -7,7 +10,19 @@ public class Materia {
     private int numeroCreditos;
     private int numeroHoras;
     private int nivel;
-    private Grupo grupo;
+    private List<Grupo> grupo;
+
+    public Materia() {
+        grupo = new ArrayList<>();
+    }
+
+    public List<Grupo> getGrupo() {
+        return grupo;
+    }
+
+    public void setGrupo(List<Grupo> grupo) {
+        this.grupo = grupo;
+    }
     private Profesor profesor;
 
     public Materia(int codigo, String nombre, int numeroCreditos, int numeroHoras, int nivel) {//constructor
@@ -63,19 +78,16 @@ public class Materia {
         this.nivel = nivel;
     }
 
-    public Grupo getGrupo() {
-        return grupo;
-    }
-
-    public void setGrupo(Grupo grupo) {
-        this.grupo = grupo;
-    }
-
     public Profesor getProfesor() {
         return profesor;
     }
 
     public void setProfesor(Profesor profesor) {
         this.profesor = profesor;
+    }
+
+    public void agregarGrupo(Grupo grupo1) {
+        this.grupo.add(grupo1);
+
     }
 }
